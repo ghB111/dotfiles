@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/mnt/c/Users/User/xampp/htdocs/secrets'
-let g:netrw_dirhist_2='/home/b111'
-let g:netrw_dirhist_3='/mnt/c/B111/Repos/j-snakeGameSDL/Screenshots'
-let g:netrw_dirhist_4='/home/b111/ToDos'
-let g:netrw_dirhist_5='/tmp'
-let g:netrw_dirhist_6='/mnt/c/Users/User'
