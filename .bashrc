@@ -306,3 +306,6 @@ bufGo () {
 }
 
 alias config='/usr/bin/git --git-dir=/home/b111/.cfg/ --work-tree=/home/b111'
+
+
+
