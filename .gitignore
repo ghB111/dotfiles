@@ -1,4 +1,5 @@
 .viminfo
 .vim/*
 .fzf/*
-.viminfo
+.cfg
+.vim/.netrwhist
