@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Hadnling xmonad and gnome
+#  https://unix.stackexchange.com/questions/288545/handling-multiple-window-managers-multiple-xsessionrc-files
+
+
+# Change resolution to okay
+~/chRes.sh
+
+if [ $STARTUP == "xmonad-session" ]; then
+# prepare and run xmonad
+
+	# Load resources
+
+	xrdb -merge .Xresources
+
+	# Set up an icon tray
+	stalonetray &
+
+	# Fire up apps
+
+	xscreensaver -no-splash &
+
+	# Start udiskie to handle media
+	udiskie &
+
+	xfce4-power-manager &
+
+	# Set background image with feh
+	# feh --bg-scale /usr/share/backgrounds/ubuntu-default-greyscale-wallpaper.png
+	feh --bg-scale ~/Downloads/newBg.jpg
+	if [ -x /usr/bin/nm-applet ] ; then
+   	nm-applet --sm-disable &
+	fi
+
+	exec xmonad
+fi
