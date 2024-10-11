@@ -166,21 +166,6 @@ export LS_COLORS
 
 #toilet -t --gay  " | ^  Willkommen  ^ |"
 
-#Welcome
-# tmux ls &>> /dev/null 1>&2; [ $? == "0" ] || (
-# echo -e "\n"
-# figlet -t -c "#   W I L L K O M M E N   #"
-# echo -e "\n"
-# )
-if [ "$TMUX_PANE" == "" ]
-then
-	echo -e "\n"
-	figlet -t -c "#   W I L L K O M M E N   #"
-    # neofetch
-    pfetch
-	echo -e "\n"
-fi
-
 export EDITOR=vim
 
 alias td="todo +children"
@@ -307,5 +292,5 @@ bufGo () {
 
 alias config='/usr/bin/git --git-dir=/home/b111/.cfg/ --work-tree=/home/b111'
 
-
+alias vim='nvim'
 
